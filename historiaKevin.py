@@ -6,10 +6,10 @@ def fase1Kevin():
     global fase
     # informaFaseePersonagem()
     # INTRODUÇAO DA FASE 1
-    cabecalho("""KEVIN É UM JOVEM GAROTO QUE TRABALHA COMO ASSISTENTE DE MANUTENÇÃO EM ORION. 
-COMO A ECONOMIA GIRA DENTRO DO METAVERSO, APENAS POUCOS TRABALHOS SOBRARAM FORA 
-DA REDE. APESAR DE VIVER FORA, ELE GOSTA DE SE DIVERTIR LÁ DENTRO. HOJE É UM DIA 
-ESPECIAL, É A VIRADA DO ANO DE 2999 PARA O ANO 3000 E KEVIN CONSEGUIU UMA FOLGA.""")
+    cabecalho("""Kevin é um jovem garoto que trabalha como assistente de manutenção em Orion.
+Como a economia gira dentro do metaverso, apenas poucos trabalhos sobraram fora
+da rede. Apesar de viver fora, ele gosta de se divertir lá dentro. Hoje é um dia
+especial, é a virada do ano de 2999 para o ano 3000 e Kevin conseguiu uma folga.""")
     
     # LISTAS COM AS OPÇOES DA FASE 1
     fase1opcao1Kevin = ['1 - CONECTAR EM ORION E CURTIR AS FESTAS DE REVEILLON', 
@@ -48,42 +48,42 @@ ESPECIAL, É A VIRADA DO ANO DE 2999 PARA O ANO 3000 E KEVIN CONSEGUIU UMA FOLGA
                     print(opcao)
         escolha = escolhaUsuario()
         if escolha == 1:                                     # ESCOLHA 1 * 1 /
-            enrredo("""FALTA POUCO PARA A CONTAGEM REGRESSIVA E KEVIN QUER IR A UM LUGAR UM POUCO MAIS 
-MOVIMENTADO PARA QUEM SABE CONHECER ALGUEM""") 
+            enrredo("""Falta pouco para a contagem regressiva e Kevin quer ir a um lugar um pouco mais
+movimentado para quem sabe conhecer alguém""") 
             for opcao in fase1opcao4Kevin:
                     print(opcao)
             escolha = escolhaUsuario()
             if escolha == 1:                                   # ESCOLHA 1 * 1 * 1 /
-                enrredo('KEVIN FOI A UMA FESTA MAIS AGITADA, PORÉM POUCO SEGURA')
-                enrredo('PREPARANDO PARA A CONTAGEM REGRESSIVA')
-                enrredo('QUE ESTRANHO, GIN, MEU CHEFE ESTÁ ME LIGANDO UMA HORA DESSAS')
+                enrredo('Kevin foi a uma festa mais agitada, porém pouco segura')
+                enrredo('Preparando para a contagem regressiva')
+                enrredo('Que estranho, Gin, meu chefe está me ligando uma hora dessas')
                 passouDeFase('VOCÊ PASSOU DE FASE')
                 fase +=1
                 # informaFaseePersonagem()
                 fase2Kevin()
             
             elif escolha == 2:                                 # ESCOLHA 1 * 1 * 2 /
-                enrredo("""KEVIN VOLTOU AO MUNDO REAL, PORÉM TODOS ESTAVA CONECTADOS A ORION""")
+                enrredo("""Kevin voltou ao mundo real, porém todos estava conectados a Orion""")
                 titulos("""VONTANDO A ORION""")                
 
         elif escolha == 2:                                 # ESCOLHA 1 * 2 / 
-                enrredo("""KEVIN PASSOU O REVEILLON MEDITANDO""")
+                enrredo("""Kevin passou o reveillon meditando""")
                 titulos("""OM""")                
                 
         
     elif escolha == 2:                                       # ESCOLHA 2 /
-        enrredo("""VER OPÇÕES DE LUGARES """)
+        enrredo("""Ver opções de lugares""")
         for opcao in fase1opcao3Kevin:
                 print(opcao)
         escolha = escolhaUsuario()
         
         if escolha == 1:                                    # ESCOLHA 2 * 1 / 
-            enrredo("""VOCÊ SAIU E ORION FOI DOMINADA POR UM MALWARE""")
+            enrredo("""Você saiu e Orion foi dominada por um malware""")
             titulos("""VOCÊ PERDEU""")       
             
         elif escolha == 2:                                    # ESCOLHA 2 * 2 / 
-            enrredo("""VOCÊ SALVOU SUAS SENHAS PARA VOLTAR DEPOIS 
-E SUAS CREDENCIAIS FORAM ROUBADAS""") 
+            enrredo("""Você salvou suas senhas para voltar depois
+e suas credenciais foram roubadas""") 
             titulos("""VOCÊ PERDEU""")            
             
     
@@ -91,8 +91,8 @@ def fase2Kevin():
     global escolha
     global fase
     # INTRODUÇAO DA FASE 2
-    cabecalho("""KEVIN ESTÁ CURTINDO SEU REVEILLON E INESPERADAMENTE RECEBE UMA LIGAÇÃO DO SEU 
-CHEFE ÀS VESPERAS DA CONTAGEM REGRESSIVA""")
+    cabecalho("""Kevin está curtindo seu reveillon e inesperadamente recebe uma ligação do seu
+chefe às vésperas da contagem regressiva""")
 
  # LISTAS COM AS OPÇOES DA FASE 2
     fase2opcao1Kevin = ['1 - ATENDER AO TELEFONE', 
@@ -113,17 +113,17 @@ CHEFE ÀS VESPERAS DA CONTAGEM REGRESSIVA""")
             print(opcao)
     escolha = escolhaUsuario()
     if escolha == 1:                                         # ESCOLHA 1 / 
-        enrredo("""KEVIN: FALA CHEFE? LIGOU ADIANTADO! AINDA FALTA UM POUCO PARA A VIRADA...""")
+        enrredo("""Kevin: fala chefe? ligou adiantado! ainda falta um pouco para a virada...""")
         sleep(0.4)
-        enrredo("""GIN: NÃO ME VENHA COM CONVERSA, ME DIGA AGORA MESMO 
-POR QUE ESTÁ ACESSANDO OS DADOS DE ÓRION""")
+        enrredo("""Gin: não me venha com conversa, me diga agora mesmo
+por que está acessando os dados de Orion""")
         sleep(0.4)
-        enrredo("""KEVIN: QUEM, EU? NESTE MOMENTO EU NÃO QUERO NEM SABER DE ORION, 
-MINHA FESTA ESTÁ MUITO BOA!""")
+        enrredo("""Kevin: quem, eu? neste momento eu não quero nem saber de Orion,
+minha festa está muito boa!""")
         sleep(0.4)
-        enrredo("""GIN: SE NÃO É VOCÊ QUEM ESTÁ CONECTANDO DOS SEUS DISPOSITIVOS?""") 
+        enrredo("""Gin: se não é você quem está conectando dos seus dispositivos?""")
         sleep(0.4)
-        enrredo("""KEVIN: QUE CONEXÃO, DE QUE DISPOSITIVOS?""")
+        enrredo("""Kevin: que conexão, de que dispositivos?""")
         print('\033[34m' + '')
         for i in range(5, 0, -1):
             contagem = str(i)
@@ -135,30 +135,29 @@ MINHA FESTA ESTÁ MUITO BOA!""")
                     print(opcao)
         escolha = escolhaUsuario()
         if escolha == 1:                                     # ESCOLHA 1 * 1 /
-            enrredo("""AGORA É TARDE, OS DADOS DE KEVIN JÁ HAVIAM SIDO ENCRIPTADOS 
-E ELE PERDEU ACESSO AOS SEUS DISPOSITIVOS.""") 
+            enrredo("""Agora é tarde, os dados de Kevin já haviam sido encriptados
+e ele perdeu acesso aos seus dispositivos.
+""") 
             for opcao in fase2opcao4Kevin:
                     print(opcao)
             escolha = escolhaUsuario()
             
             if escolha == 1:                                   # ESCOLHA 1 * 1 * 1 /
-                enrredo('KEVIN: GIN EU FUI RACKEADO, VOCÊ PRECISA ME AJUDAR!')
+                enrredo('Kevin: Gin eu fui rackeado, você precisa me ajudar!')
                 sleep(0.4)
-                enrredo('GIN: SIGA MINHAS INSTRUÇÕES!') 
-                sleep(0.4)
-                passouDeFase('VOCÊ PASSOU DE FASE')
+                enrredo('Gin: siga minhas instruções!')
                 fase +=1
                 # informaFaseePersonagem()
                 fase3Kevin()
 
             elif escolha == 2:                                 # ESCOLHA 1 * 1 * 2 /
-                enrredo("""MESMO COM NOVOS DISPOSITIVOS VOCÊ NÃO TEM 
-ACESSO POIS AS CREDENCIAIS FORAM ROUBADAS""")
+                enrredo("""Mesmo com novos dispositivos você não tem
+acesso pois as credenciais foram roubadas""")
                 titulos("""VOCÊ PERDEU""")                
                 
 
         elif escolha == 2:                                 # ESCOLHA 1 * 2 / 
-                enrredo("""SEUS DISPOSITIVOS ESTÃO BLOQUEADOS""")
+                enrredo("""Seus dispositivos estão bloqueados""")
                 titulos("""VOCÊ PERDEU""")                
                 
         
@@ -169,12 +168,13 @@ ACESSO POIS AS CREDENCIAIS FORAM ROUBADAS""")
         escolha = escolhaUsuario()
 
         if escolha == 1:                                    # ESCOLHA 2 * 1 / 
-            enrredo("""SEM QUERER VOCÊ PAROU O ACESSO DE DORA AO SEU USUÁRIO, MAS FOI SORTE""")
+            enrredo("""Sem querer você parou o acesso de Dora ao seu usuário, mas foi sorte""")
             titulos("""SAINDO PARA CURTIR A FESTA""")            
             
 
         elif escolha == 2:                                    # ESCOLHA 2 * 2 / 
-            enrredo("""TARDE DE MAIS, ENQUANTO VOCÊ DIGITAVA SEUS DISPOSITIVOS PARARAM DE FUNCIONAR""") 
+            enrredo("""Tarde de mais, enquanto você digitava seus dispositivos 
+pararam de funcionar""") 
             titulos("""VOCÊ PERDEU""")            
             
 
@@ -183,11 +183,11 @@ def fase3Kevin():
     global escolha
     global fase
     # INTRODUÇAO DA FASE 3
-    cabecalho("""ATRAVÉS DOS ACESSOS DE KEVIN, DORA CONSEGUIU ACESSAR ORION E 
-DISPARAR MENSAGENS DE PHISHING PARA INFECTAR TODOS OS SEUS USUÁRIOS, 
-PORÉM GIN JÁ HAVIA RASTERADO OS DADOS DE DADOS ATRAVÉS DA CONEXÃO DE 
-KEVIN E INTERCEPTADO OS PACOTES.
-GIN IRÁ DAR IMPORTANTES INSTRUÇÕES À KEVIN""")
+    cabecalho("""Através dos acessos de Kevin, Dora conseguiu acessar Orion e
+disparar mensagens de phishing para infectar todos os seus usuários,
+porém Gin já havia rastreado os dados de dados através da conexão de
+Kevin e interceptado os pacotes.
+Gin irá dar importantes instruções à Kevin""")
 
  # LISTAS COM AS OPÇOES DA FASE 3
     fase3opcao1Kevin = ['1 - SEGUIR INSTRUÇÕES', 
@@ -208,21 +208,21 @@ GIN IRÁ DAR IMPORTANTES INSTRUÇÕES À KEVIN""")
             print(opcao)
     escolha = escolhaUsuario()
     if escolha == 1:                                         # ESCOLHA 1 / 
-        enrredo("""GIN: SAIA DESTE LUGAR IMEDIATAMENTE, 
-ELE ESTÁ CAUSANDO UM ATAQUE DDKS NOS SEU DMS""")
+        enrredo("""Gin: saia deste lugar imediatamente,
+ele está causando um ataque DDKS no seu DMS""")
         sleep(0.4)
-        enrredo("""KEVIN: MAS GIN, A ENTRADA NESSA FESTA ME CUSTOU ¢187 METACOINS""")
+        enrredo("""Kevin: mas Gin, a entrada nessa festa me custou ¢187 metacoins""")
         sleep(0.4)
         enrredo("""GIN: SAIA IMEDIATAMENTE""")
         sleep(0.4)
-        enrredo("""KEVIN: TÁ, SAINDO.... E AGORA?""")
+        enrredo("""Kevin: tá, saindo.... e agora?""")
         sleep(0.4)
-        enrredo("""GIN: VOCÊ DEVERÁ REINICIAR SEUS DISPOSITIVOS EM MODO DE SEGURANÇA""")
+        enrredo("""Gin: você deverá reiniciar seus dispositivos em modo de segurança""")
         sleep(0.4)
-        enrredo("""KEVIN: COMO FAÇO ISSO?""")
+        enrredo("""Kevin: como faço isso""")
         sleep(0.4)
-        enrredo("""GIN: REINICIE O DISPOSITIVO E COM A TECLA ALPHA APERTADA
-SOLICITE AO MAIN TERMINAL O SAFEBOOT""")
+        enrredo("""Gin: reinicie o dispositivo e com a tecla alpha apertada
+solicite ao main terminal o safeboot""")
 
         if escolha == 1:
             for opcao in fase3opcao2Kevin:
@@ -230,45 +230,45 @@ SOLICITE AO MAIN TERMINAL O SAFEBOOT""")
         escolha = escolhaUsuario()
 
         if escolha == 1:                                     # ESCOLHA 1 * 1 /
-            enrredo("""GIN: AGORA EU VOU RESETAR OS SEUS DISPOSITIVOS PARA 
-REINICIAR AS CREDENCIAIS E IMPEDIR QUE O ACESSO CONTINUE""")
-            enrredo('KEVIN: MAS ASSIM VOU PERDER AS FOTOS DO MEU REVEILLON...')
-            enrredo('GIN: OU AS SUAS MALDITAS FOTOS OU TODA ORION ESTARÁ DESTRUÍDA!!!')
-            enrredo('KEVIN: TÁ BEM... ')
+            enrredo("""Gin: agora eu vou resetar os seus dispositivos para
+reiniciar as credenciais e impedir que o acesso continue""")
+            enrredo('Kevin: mas assim vou perder as fotos do meu reveillon...')
+            enrredo('Gin: ou as suas malditas fotos ou toda Orion estará destruída!!!')
+            enrredo('Kevin: tá bem... ')
 
             for opcao in fase3opcao4Kevin:
                     print(opcao)
             escolha = escolhaUsuario()
 
             if escolha == 1:                                   # ESCOLHA 1 * 1 * 1 /
-                enrredo("""AO SEGUIR AS INSTRUÇÕES, KEVIN E GIN CONSEGUIRAM IMPEDIR O ATAQUE""") 
+                enrredo("""Ao seguir as instruções, Kevin e Gin conseguiram impedir o ataque""") 
                 passouDeFase("""ORION FOI SALVA DE MAIS UM ATAQUE DE DORA""")
 
 
             elif escolha == 2:                                 # ESCOLHA 1 * 1 * 2 /
-                enrredo("""VOCÊ DESLIGOU E GIN PERDEU A INTERCEPTAÇÃO DOS PACOTES, DORA ACESSOU ORION""")
+                enrredo("""Você desligou e Gin perdeu a interceptação dos pacotes, Dora acessou Orion""")
                 titulos("""VOCÊ PERDEU""")                
                 
 
         elif escolha == 2:                                 # ESCOLHA 1 * 2 / 
-                enrredo("""OS ATAQUES DDKS NOS SEU DMS SE INTENSIFICARAM E FOI IMPOSSÍVEL REVERTER O ACESSO""")
+                enrredo("""Os ataques ddks nos seu dms se intensificaram e foi impossível reverter o acesso""")
                 titulos("""VOCÊ PERDEU""")                
                 
         
     elif escolha == 2:                                       # ESCOLHA 2 /
-        enrredo("""VOU RESOLVER SOZINHO""")
+        enrredo("""Vou resolver sozinho""")
         for opcao in fase3opcao3Kevin:
                 print(opcao)
         escolha = escolhaUsuario()
 
         if escolha == 1:                                    # ESCOLHA 2 * 1 / 
-            enrredo("""A SOLUÇÃO AUTOMÁTICA DEMOROU 18 MINUTOS PARA FAZER O DIAGNÓSTICO,
-NESTE TEMPO DORA JÁ TINHA RACKEADO TODOS DE ORION""")
+            enrredo("""A solução automática demorou 18 minutos para fazer o diagnóstico,
+neste tempo Dora já tinha rackeado todos de Orion""")
             titulos("""VOCÊ PERDEU""")            
             
 
         elif escolha == 2:                                    # ESCOLHA 2 * 2 / 
-            enrredo("""VOCÊ NÃO CONSEGUIU CONTATO COM ONE""") 
+            enrredo("""Você não conseguiu contato com ONE""") 
             titulos("""VOCÊ PERDEU""")            
             
 
