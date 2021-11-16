@@ -35,18 +35,18 @@ sistema...""")
             print(opcao)
     escolha = escolhaUsuario()
     if escolha == 1:                                         # ESCOLHA 1 / 
-        enrredo('RASTREANDO PICO DE DADOS...') 
+        enrredo('Rastreando pico de dados...') 
         if escolha == 1:
             for opcao in fase1opcao2Gin:
                     print(opcao)
         escolha = escolhaUsuario()
        
         if escolha == 1:                                     # ESCOLHA 1 * 1 /
-            enrredo('O PICO VEM DOS DISPOSITIVOS DO ...')
+            enrredo('O pico vem dos dispositivos do ...')
             sleep(1)
             enrredo('KEVIN') 
             sleep(0.5)
-            enrredo('KEVIN É O ASSISTENTE DE GIN, QUE ESTÁ DE FOLGA, CURTINDO O REVEILLON')
+            enrredo('Kevin é o assistente de Gin, que está de folga, curtindo o reveillon')
             for opcao in fase1opcao4Gin:
                     print(opcao)
             escolha = escolhaUsuario()
@@ -63,11 +63,11 @@ sistema...""")
                 perdeuPlayboy('VOCÊ PERDEU')                
 
         elif escolha == 2:                                 # ESCOLHA 1 * 2 / 
-                enrredo('GIN NÃO INSISTIU E PERMITIU UMA GRANDE FALHA DE SEGURANÇA EM ORION')
+                enrredo('Gin não insistiu e permitiu uma grande falha de segurança em Orion')
                 perdeuPlayboy('Persista')                
         
     elif escolha == 2:                                       # ESCOLHA 2 /
-        enrredo('VOCÊ LEVANTOU E ORION FOI INVADIDA')
+        enrredo('Você levantou e Orion foi invadida')
         for opcao in fase1opcao3Gin:
                 print(opcao)
         escolha = escolhaUsuario()
@@ -77,8 +77,8 @@ sistema...""")
             perdeuPlayboy('Pequenos descuidos causam grandes impactos')  
 
         elif escolha == 2:                                    # ESCOLHA 2 * 2 / 
-            enrredo('PARA ALGUMAS COISAS EXISTEM SOMENTE UMA OPORTUNIDADE') 
-            perdeuPlayboy('AGARRE-A ANTES QUE SEJA TARDE')            
+            enrredo('Para algumas coisas existem somente uma oportunidade, agarre-a antes que seja tarde') 
+            perdeuPlayboy('VOCÊ PERDEU')            
 
    
 def fase2Gin():
@@ -109,13 +109,13 @@ não é Kevin que está acessando os dados""")
             print(opcao)
     escolha = escolhaUsuario()
     if escolha == 1:                                         # ESCOLHA 1 / 
-        enrredo('RASTREANDO DADOS...')
+        enrredo('Rastreando dados...')
         sleep(0.3)
-        enrredo('RASTREANDO DADOS...')
+        enrredo('Rastreando dados...')
         sleep(0.3)
-        enrredo('RASTREANDO DADOS...')
+        enrredo('Rastreando dados...')
         sleep(0.3)
-        enrredo('ORIGEM NÃO ENCONTRADA')
+        enrredo('Origem não encontrada')
 
         if escolha == 1:
             for opcao in fase2opcao2Gin:
@@ -123,38 +123,41 @@ não é Kevin que está acessando os dados""")
         escolha = escolhaUsuario()
         if escolha == 1:                                     # ESCOLHA 1 * 1 /
             enrredo('Nem sempre você acerta de primeira, insista!') 
-            enrredo('Os dados estão vindo de uma VPN, mas ainda não é possível identificar quem está acessando.')
+            enrredo("""Os dados estão vindo de uma VPN, mas ainda não é possível identificar quem 
+está acessando.""")
             for opcao in fase2opcao4Gin:
                     print(opcao)
             escolha = escolhaUsuario()
             
             if escolha == 1:                                   # ESCOLHA 1 * 1 * 1 /
-                enrredo('DEU CERTO! Ao comparar as informações de outros trafegos, achei uma coincidência.') 
+                enrredo("""DEU CERTO! Ao comparar as informações de outros trafegos, achei uma 
+coincidência.""") 
                 passouDeFase('VOCÊ PASSOU DE FASE!')
                 fase +=1
                 fase3Gin()
             
             elif escolha == 2:                                 # ESCOLHA 1 * 1 * 2 /
-                enrredo('ISSO É CRIME')
-                perdeuPlayboy('DA CADEIA VOCÊ NÃO PODE CONTINUAR')              
+                enrredo('Isso é crime')
+                perdeuPlayboy('Da cadeia você não pode continuar')              
                 
         elif escolha == 2:                                 # ESCOLHA 1 * 2 / 
-                enrredo('PROCRASTINAÇÃO PODE LEVAR A DEPRESSÃO, ANSIEDADE, INSATISFAÇÃO E ESTRESSE CRÔNICO')
-                perdeuPlayboy('PROCURE AJUDA PSICOLÓGICA')                     
+                enrredo("""Procrastinação pode levar a depressão, ansiedade, insatisfação e 
+estresse crônico""")
+                perdeuPlayboy('VOCÊ PERDEU')                     
         
     elif escolha == 2:                                       # ESCOLHA 2 /
-        enrredo('enreddo9')
+        enrredo('Agora você deverá escolher...')
         for opcao in fase2opcao3Gin:
                 print(opcao)
         escolha = escolhaUsuario()
         
         if escolha == 1:                                    # ESCOLHA 2 * 1 / 
-            enrredo('VOLTANDO PARA A MATRIX')
-            perdeuPlayboy('ACORDANDO EM SEU APARTAMENTO ATRASADO PARA O TRABALHO QUE VOCÊ DETESTA...')          
+            enrredo('Voltando para a matrix')
+            perdeuPlayboy('Acordando em seu apartamento atrasado para o trabalho que você detesta...')          
         
         elif escolha == 2:                                    # ESCOLHA 2 * 2 / 
-            enrredo('SAINDO DA MATRIX') 
-            perdeuPlayboy('BEM VINDO AO MUNDO REAL')            
+            enrredo('Saindo da matrix') 
+            perdeuPlayboy('Bem vindo ao mundo real')            
 
 
 def fase3Gin():
@@ -184,7 +187,8 @@ def fase3Gin():
             print(opcao)
     escolha = escolhaUsuario()
     if escolha == 1:                                         # ESCOLHA 1 / 
-        enrredo('A pessoa que está acessando os dados de Kevin é Dora, já conhecida por aplicar golpes virtuais em Orion.') 
+        enrredo("""A pessoa que está acessando os dados de Kevin é Dora, já conhecida por aplicar 
+golpes virtuais em Orion.""") 
         if escolha == 1:
             for opcao in fase3opcao2Gin:
                     print(opcao)
@@ -200,24 +204,25 @@ def fase3Gin():
                 passouDeFase('FIM DE JOGO')                
             
             elif escolha == 2:                                 # ESCOLHA 1 * 1 * 2 /
-                enrredo('DORA CONSEGUIU ACESSAR ORION E ROUBOU OS NFTS MAIS VALIOSOS DO MUNDO')
+                enrredo('Dora conseguiu acessar Orion e roubou os nfts mais valiosos do mundo')
                 perdeuPlayboy('DORA VENCEU')                
 
         elif escolha == 2:                                 # ESCOLHA 1 * 2 / 
-                enrredo('DESLIGAR A ENERGIA DE ORION CAUSOU GRANDE DESCONTENTAMENTO DOS USUÁRIOS LEVANDO A DEMISSÃO DE GIN')
+                enrredo("""Desligar a energia de Orion causou grande descontentamento dos usuários 
+levando a demissão de Gin""")
                 perdeuPlayboy('VOCÊ PERDEU')                
         
     elif escolha == 2:                                       # ESCOLHA 2 /
-        enrredo('O SEGREDO ESTÁ REVELADO NUMA CARTA')
+        enrredo('O segredo está revelado numa carta')
         for opcao in fase3opcao3Gin:
                 print(opcao)
         escolha = escolhaUsuario()
         
         if escolha == 1:                                    # ESCOLHA 2 * 1 / 
-            enrredo('O QUE DISSE QUE DISSESTE QUE DIZIA A CARTA?')
-            perdeuPlayboy('ÓH, É ALGO TERRÍVEL...')            
+            enrredo('O que disse que disseste que dizia a carta?')
+            perdeuPlayboy('ÓH, É ALGO TERRÍVEL... repete por 18x')            
         
         elif escolha == 2:                                    # ESCOLHA 2 * 2 / 
-            enrredo('O SEGREDO ERA ALGO TERRÍVEL PARA SER REVELADO') 
+            enrredo('O segredo era algo terrível para ser revelado') 
             perdeuPlayboy('VOCÊ PERDEU')
             
