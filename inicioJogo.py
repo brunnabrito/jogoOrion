@@ -34,6 +34,7 @@ def reinicioJogo():
             personagemEscolhido = definePersonagem()
             inicioJogo()
             seguirJogo = 0
+            fase = 0
         
     elif seguirJogo ==2:
         exit

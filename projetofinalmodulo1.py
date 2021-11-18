@@ -96,10 +96,10 @@ Data Analytics da Resilia.""")
 grupo Gabriel e Juliano pela parceria e companheirismo, sem vocês seria muito mais 
 difícil.""")
     titulos('O JOGO')
-    subcabecalho("""ORION é o metaverso que dominou o mundo no final do terceiro milênio, porém devido 
-ao BUG DO MILENIO Dora encontrou uma falha que a faz controlar as pessoas e o jovem 
-Kevin caiu em uma de suas armadilhas vituais. Agora Gin terá que salvar seu 
-assistente e salvar o mundo de ser dominado por Dora.""")
+    subcabecalho("""ORION é o metaverso que dominou o mundo no final dos anos 2900, porém devido 
+ao BUG DO MILÊNIO Dora encontrou uma falha de Cyber Segurança e e aproveitou para aplicar golpes.
+O jovem Kevin caiu em uma de suas armadilhas virtuais e agora Gin terá que salvar seu 
+assistente e o mundo de ser dominado por Dora.""")
     menuInicial()
     
 
@@ -119,6 +119,8 @@ def verPerfil():
 
 #FUNÇAO DO MENU INICIAL
 def menuInicial():
+    global fase
+    fase = 0
     titulos(titulo)
     for i, opcao in enumerate(opcoesMenuInicial):
         print(i+1, '- ', opcao)
@@ -206,13 +208,13 @@ def escolhaUsuario():
         return escolha
 
 
-# FUNCÃO PARA INFORMAR A FASE - AINDA A SER IMPLEMENTADA - ESTÁ DANDO ERRO AO REINICIAR JOGO
-# def informaFaseePersonagem():
-#     global fase
-#     if personagemEscolhido != ' ':
-#         fase += 1
-#     titulos(f'VOCÊ ESTÁ NA FASE {fase} DA PERSONAGEM {personagemEscolhido}')
-#     return fase
+#FUNCÃO PARA INFORMAR A FASE - AINDA A SER IMPLEMENTADA - ESTÁ DANDO ERRO AO REINICIAR JOGO
+def informaFaseePersonagem():
+    global fase
+    if personagemEscolhido != ' ':
+        fase += 1
+    titulos(f'VOCÊ ESTÁ NA FASE {fase} DA PERSONAGEM {personagemEscolhido}')
+    return fase
         
 
 menuInicial()

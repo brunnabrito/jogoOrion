@@ -5,7 +5,7 @@ from projetofinalmodulo1 import *
 def fase1Gin():
     global escolha
     global fase
-    # informaFaseePersonagem()
+    informaFaseePersonagem()
 
     # INTRODUÇAO DA FASE 1
     cabecalho("""Gin é o responsável de manutenção de Orion, apesar dele odiar Orion esta é a 
@@ -55,7 +55,7 @@ sistema...""")
                 enrredo('Vou fazer uma chamada para esse menino imediatamente!') 
                 passouDeFase('VOCÊ PASSOU DE FASE')
                 fase +=1
-                # informaFaseePersonagem()
+                informaFaseePersonagem()
                 fase2Gin()
            
             elif escolha == 2:                                 # ESCOLHA 1 * 1 * 2 /
@@ -163,7 +163,7 @@ estresse crônico""")
 def fase3Gin():
     global escolha
     global fase
-    # informaFaseePersonagem()
+    informaFaseePersonagem()
 
     # INTRODUÇAO DA FASE 3
     cabecalho('Gin conseguiu chegar até a pessoa que está usando os dados de Kevin.')

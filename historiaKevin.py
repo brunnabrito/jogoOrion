@@ -4,7 +4,7 @@ from projetofinalmodulo1 import *
 def fase1Kevin():
     global escolha
     global fase
-    # informaFaseePersonagem()
+    informaFaseePersonagem()
     # INTRODUÇAO DA FASE 1
     cabecalho("""Kevin é um jovem garoto que trabalha como assistente de manutenção em Orion.
 Como a economia gira dentro do metaverso, apenas poucos trabalhos sobraram fora
@@ -59,7 +59,7 @@ movimentado para quem sabe conhecer alguém""")
                 enrredo('Que estranho, Gin, meu chefe está me ligando uma hora dessas')
                 passouDeFase('VOCÊ PASSOU DE FASE')
                 fase +=1
-                # informaFaseePersonagem()
+                informaFaseePersonagem()
                 fase2Kevin()
             
             elif escolha == 2:                                 # ESCOLHA 1 * 1 * 2 /
@@ -147,7 +147,7 @@ e ele perdeu acesso aos seus dispositivos.
                 sleep(0.4)
                 enrredo('Gin: siga minhas instruções!')
                 fase +=1
-                # informaFaseePersonagem()
+                informaFaseePersonagem()
                 fase3Kevin()
 
             elif escolha == 2:                                 # ESCOLHA 1 * 1 * 2 /

@@ -1,12 +1,10 @@
 
 from projetofinalmodulo1 import *
 
-
-# informaFaseePersonagem()
-
 def fase1Dora():
     global escolha
     global fase
+    informaFaseePersonagem()
     # INTRODUÇAO DA FASE
     enrredo("""Dora é uma pessoa muito curiosa, e descobriu sobre uma lenda urbana, a do bug do 
 milenio de 1999. isso fez Dora pensar, será mesmo uma lenda urbana? o que há de 
@@ -52,7 +50,7 @@ enorme falha de cybersegurança.""")
 manipular as pessoas conectadas a me fazer transações""") 
                 passouDeFase('VOCÊ PASSOU DE FASE')
                 fase +=1
-                # informaFaseePersonagem()
+                informaFaseePersonagem()
                 fase2Dora()
             
             elif escolha == 2:                                     # ESCOLHA 1 * 1 * 2 / 
@@ -137,7 +135,7 @@ do sistema do qual é responsável ficou a mostra. a entrada de Dora não poderi
                 enrredo('Acessando... ') 
                 passouDeFase('VOCÊ PASSOU DE FASE')
                 fase +=1
-                # informaFaseePersonagem()
+                informaFaseePersonagem()
                 fase3Dora()
             
             elif escolha == 2:                                 # ESCOLHA 1 * 1 * 2 /
