@@ -20,9 +20,9 @@ titulo = ("""
 personagens = ("Gin", "Kevin", "Dora", "Voltar")
 opcoesMenuInicial = ('Iniciar', 'Créditos', 'Sair')
 acoes = ("Ver perfil de cada personagem", "Escolher Personagem", "Voltar")
-textoKevin = 'Kevin é um jovem de boa índole porém um pouco atrapalhado. \nÉ o assitente do Gin, eles trabalham na manutenção de Orion.'
-textoGin = 'Ranzinza e rabugento, um senhor que sem opção de emprego, faz \nna manutenção de Orion, no metaverso que dominou o mundo \nem 2999.'
-textoDora = 'Ambição e traumas fazem parte de sua personalidade, \nprocura o tempo todo meios fáceis de conseguir dinheiro no \nmetaverso.'
+textoKevin = 'Kevin é um jovem de boa índole porém um pouco atrapalhado. É o assitente do Gin, eles trabalham na \nmanutenção de Orion.'
+textoGin = 'Ranzinza e rabugento, um senhor que sem opção de emprego, faz na manutenção de Orion, no metaverso \nque dominou o mundo em 2999.'
+textoDora = 'Ambição e traumas fazem parte de sua personalidade, procura o tempo todo meios fáceis de conseguir \ndinheiro no metaverso.'
 personagemEscolhido = ' '
 seguirJogo = 0
 escolha = 0
@@ -51,13 +51,14 @@ def cabecalho(msg):
     linhas = msg.splitlines()
     for l in linhas:
         print(l.center(100))
-        sleep(0.4)
+        sleep(0.2)
     linha()
 
 def titulos(msg):
     print()
     print(bWhi + cBla + msg.center(100) + cEnd)
     print()
+
 
 def passouDeFase(msg):
     print(cGre + ('=' * 100) + cEnd)
@@ -84,7 +85,7 @@ def enrredo(msg):
     linhas = msg.splitlines()
     for l in linhas:
         print(cBlu + l.center(100) + cEnd)
-        sleep(0.4)
+        sleep(0.2)
     print()
 
 # FUNÇAO PARA EXIBIR OS CRÉDITOS
@@ -105,14 +106,12 @@ assistente e o mundo de ser dominado por Dora.""")
 
 # FUNÇÃO COM PERFIL DOS PERSONAGENS
 def verPerfil():
-    titulos(' ')
     titulos('KEVIN')
     print(textoKevin)
     titulos('GIN')
     print(textoGin)
     titulos('DORA')
     print(textoDora)
-    titulos(' ')
     titulos('MENU')
     subMenu()
 

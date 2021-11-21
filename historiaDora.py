@@ -213,7 +213,7 @@ dados e não clique em qualquer coisa""")
 
         elif escolha == 2:                                 # ESCOLHA 1 * 2 / 
                 enrredo('Dale a tu cuerpo alegría Macarena \nQue tu cuerpo es pa darle alegría y cosa buena \nDale a tu cuerpo alegría, Macarena')
-                titulos('Hey Macarena, ay')                              
+                perdeuPlayboy('Hey Macarena, ay..... SAINDO...')                              
        
     elif escolha == 2:                                       # ESCOLHA 2 /
         enrredo("""Olá! Obrigado por ler esta mensagem. Tem um garoto faminto em Baklaliviatatlaglooshen que não 
